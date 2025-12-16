@@ -23,7 +23,12 @@ pageClass: device-page
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
+## Notes
 
+### Pairing
+
+Power-cycle the bulb 5 times to put it in pairing mode:  
+Turn on - off - on - off - on - off - on - off - on - off - on. The light should start flashing.
 
 <!-- Notes END: Do not edit below this line -->
 

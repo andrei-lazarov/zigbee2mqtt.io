@@ -33,10 +33,17 @@ There are two different options to reset the device and enter pairing mode:
 
 The device will stay in "state" : "OFF" and cannot be switched while it is in pairing mode. If not successfully paired, it will exit pairing mode after 180 seconds.
 
+todo:
 ### Turbo Mode
 The Turbo mode increases transmission power and can therefore better bridge thick walls or large distances to the coordinator/next router, but with disadvantages such as 
 unwanted interference with Wi-Fi and other Zigbee networks, asymmetrical connections (end device hears the router well, but the router does not hear the end device) 
 and 'unhealthy Zigbee' network because devices do connect to the “loudest” router, which is not necessarily the closest one.
+
+### Issues
+
+#### Network spam
+
+If the device is bound to a group, it will regularly (and unnecessarily) broadcast Report Attributes (OnOff)
 <!-- Notes END: Do not edit below this line -->
 
 

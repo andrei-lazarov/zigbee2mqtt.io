@@ -32,7 +32,7 @@ The device does not support OTA updates via Zigbee. Instead, updates are provide
 View available updates [here](https://webui.dcl.csa-iot.org/models) (search *KAJPLATS* or *4476*).
 
 ## Issues
-- The device may come with null model and manufacturer attributes. In this case, Zigbee2MQTT will recognize it generically. A firmware update may fix it
+- The device may come with null model and manufacturer attributes. In this case, Zigbee2MQTT will recognize it generically. A firmware update may fix it. Or edit database.db manually.
 - Power-on behavior may not work, only in Zigbee mode, on some models (at least one variant of [LED2401G5](./LED2401G5.md))
 - Scenes, groups and the _OffWithEffect_ command may fail, with the INSUFFICIENT_SPACE error. See more info and workaround in [this issue](https://github.com/Koenkk/zigbee2mqtt/issues/30211#issuecomment-4019236515)
 

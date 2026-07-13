@@ -46,7 +46,7 @@ Value can be found in the published state on the `learned_ir_code` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 
 ### Ir code to send (text)
-The IR code to send by device.
+The IR code or timings to send by device.
 Value will **not** be published in the state.
 It's not possible to read (`/get`) this value.
 To write (`/set`) a value publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/set` with payload `{"ir_code_to_send": NEW_VALUE}`.

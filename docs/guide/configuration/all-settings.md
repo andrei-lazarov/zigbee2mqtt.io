@@ -1166,6 +1166,7 @@ homeassistant:
 
 - Type: `boolean`
 - Default: `false`
+- <span style="color: red">Restart required to be effective</span>
 
 ### experimental_event_entities
 
@@ -1178,6 +1179,7 @@ homeassistant:
 
 - Type: `boolean`
 - Default: `false`
+- <span style="color: red">Restart required to be effective</span>
 
 ## map_options
 

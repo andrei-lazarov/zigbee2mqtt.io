@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SR-ZG9098A-Win  |
 | Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description | Zigbee curtain control module |
-| Exposes | cover (state, position, tilt), power, voltage, current, energy, dev_mode, curtain_type, calibrate, identify, action |
+| Exposes | cover (state, position, tilt), power, voltage, current, energy, dev_mode, curtain_type, calibrate, identify, action, action_group |
 | Picture | ![Sunricher SR-ZG9098A-Win](https://www.zigbee2mqtt.io/images/devices/SR-ZG9098A-Win.png) |
 
 
@@ -126,4 +126,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `recall_1`, `recall_2`, `store_1`, `store_2`, `add_1`, `add_2`, `remove_1`, `remove_2`, `remove_all_1`, `remove_all_2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

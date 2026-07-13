@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | ZG-222ZA-z-SlD  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | Tuya water leak sensor with custom firmware |
-| Exposes | battery, voltage, water_leak, battery_low, switch_actions, action |
+| Exposes | battery, voltage, water_leak, battery_low, switch_actions, action, action_group |
 | Picture | ![Slacky-DIY ZG-222ZA-z-SlD](https://www.zigbee2mqtt.io/images/devices/ZG-222ZA-z-SlD.png) |
 
 
@@ -74,4 +74,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `toggle`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

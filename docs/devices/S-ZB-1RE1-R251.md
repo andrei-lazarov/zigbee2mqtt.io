@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | S-ZB-1RE1-R251  |
 | Vendor  | [smarli.](/supported-devices/#v=smarli.)  |
 | Description | relay |
-| Exposes | identify, switch (state), power, voltage, current, energy, action |
+| Exposes | identify, switch (state), power, voltage, current, energy, action, action_group |
 | Picture | ![smarli. S-ZB-1RE1-R251](https://www.zigbee2mqtt.io/images/devices/S-ZB-1RE1-R251.png) |
 
 
@@ -118,4 +118,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `recall_1`, `recall_2`, `store_1`, `store_2`, `add_1`, `add_2`, `remove_1`, `remove_2`, `remove_all_1`, `remove_all_2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

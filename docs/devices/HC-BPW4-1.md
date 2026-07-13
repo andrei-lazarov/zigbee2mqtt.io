@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | HC-BPW4-1  |
 | Vendor  | [Heimgard Technologies](/supported-devices/#v=Heimgard%20Technologies)  |
 | Description | Wireless Switch 4 Chanel |
-| Exposes | battery, action |
+| Exposes | battery, action, action_group, action_level, action_step_size, action_transition_time, action_rate |
 | Picture | ![Heimgard Technologies HC-BPW4-1](https://www.zigbee2mqtt.io/images/devices/HC-BPW4-1.png) |
 
 
@@ -56,4 +56,35 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_1`, `on_2`, `off_1`, `off_2`, `toggle_1`, `toggle_2`, `brightness_move_to_level_1`, `brightness_move_to_level_2`, `brightness_move_up_1`, `brightness_move_up_2`, `brightness_move_down_1`, `brightness_move_down_2`, `brightness_step_up_1`, `brightness_step_up_2`, `brightness_step_down_1`, `brightness_step_down_2`, `brightness_stop_1`, `brightness_stop_2`, `color_temperature_move_stop_1`, `color_temperature_move_stop_2`, `color_temperature_move_up_1`, `color_temperature_move_up_2`, `color_temperature_move_down_1`, `color_temperature_move_down_2`, `color_temperature_step_up_1`, `color_temperature_step_up_2`, `color_temperature_step_down_1`, `color_temperature_step_down_2`, `enhanced_move_to_hue_and_saturation_1`, `enhanced_move_to_hue_and_saturation_2`, `move_to_hue_and_saturation_1`, `move_to_hue_and_saturation_2`, `color_hue_step_up_1`, `color_hue_step_up_2`, `color_hue_step_down_1`, `color_hue_step_down_2`, `color_saturation_step_up_1`, `color_saturation_step_up_2`, `color_saturation_step_down_1`, `color_saturation_step_down_2`, `color_loop_set_1`, `color_loop_set_2`, `color_temperature_move_1`, `color_temperature_move_2`, `color_move_1`, `color_move_2`, `hue_move_1`, `hue_move_2`, `hue_stop_1`, `hue_stop_2`, `move_to_saturation_1`, `move_to_saturation_2`, `move_to_hue_1`, `move_to_hue_2`, `stop_move_step_1`, `stop_move_step_2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
+
+### Action level (numeric)
+Target brightness of Move to level command.
+Value can be found in the published state on the `action_level` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
+
+### Action rate (numeric)
+Rate parameter of brightness/color Move commands.
+Value can be found in the published state on the `action_rate` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
 

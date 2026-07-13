@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | QBKG17LM  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Smart wall switch T1 (no neutral, single rocker) |
-| Exposes | switch (state), device_temperature, power_outage_count, power_outage_memory, operation_mode, led_disabled_night, flip_indicator_light, action |
+| Exposes | switch (state), device_temperature, power_outage_count, power_outage_memory, operation_mode, led_disabled_night, flip_indicator_light, action, action_group |
 | Picture | ![Aqara QBKG17LM](https://www.zigbee2mqtt.io/images/devices/QBKG17LM.png) |
 
 
@@ -98,4 +98,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `single`, `double`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

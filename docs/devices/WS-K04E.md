@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | WS-K04E  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Light Switch H2 US (quadruple rocker) |
-| Exposes | power, switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, multi_click, led_disabled_night, flip_indicator_light, mode_switch, action |
+| Exposes | power, switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, multi_click, led_disabled_night, flip_indicator_light, mode_switch, action, action_group |
 | Picture | ![Aqara WS-K04E](https://www.zigbee2mqtt.io/images/devices/WS-K04E.png) |
 
 
@@ -179,4 +179,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `hold_top`, `hold_center`, `hold_bottom`, `hold_wireless`, `single_top`, `single_center`, `single_bottom`, `single_wireless`, `double_top`, `double_center`, `double_bottom`, `double_wireless`, `release_top`, `release_center`, `release_bottom`, `release_wireless`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

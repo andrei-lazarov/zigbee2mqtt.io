@@ -59,7 +59,8 @@ It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `stop`, `brightness_stop`, `brightness_move_up`, `brightness_move_down`.
 
 ### Action group (numeric)
-Group where the action was triggered on.
+Target group of the action.
 Value can be found in the published state on the `action_group` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

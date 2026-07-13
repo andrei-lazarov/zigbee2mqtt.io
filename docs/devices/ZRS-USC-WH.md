@@ -1,7 +1,7 @@
 ---
 title: "Moes ZRS-USC-WH control via MQTT"
 description: "Integrate your Moes ZRS-USC-WH via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.466Z
 pageClass: device-page
 ---
 

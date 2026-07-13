@@ -1,7 +1,7 @@
 ---
 title: "AOYAN AY-204ZX control via MQTT"
 description: "Integrate your AOYAN AY-204ZX via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.491Z
 pageClass: device-page
 ---
 

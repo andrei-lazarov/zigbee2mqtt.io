@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SR-ZG9001T2-SW  |
 | Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description | Zigbee 2-gang touch panel |
-| Exposes | switch (state), power_on_behavior, identify, external_switch_type, action |
+| Exposes | switch (state), power_on_behavior, identify, external_switch_type, action, action_group |
 | Picture | ![Sunricher SR-ZG9001T2-SW](https://www.zigbee2mqtt.io/images/devices/SR-ZG9001T2-SW.png) |
 
 
@@ -94,4 +94,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_1`, `on_2`, `off_1`, `off_2`, `toggle_1`, `toggle_2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

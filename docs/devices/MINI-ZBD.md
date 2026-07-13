@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | MINI-ZBD  |
 | Vendor  | [SONOFF](/supported-devices/#v=SONOFF)  |
 | Description | Zigbee smart switch |
-| Exposes | switch (state), power_on_behavior, network_indicator, turbo_mode, delayed_power_on_state, delayed_power_on_time, detach_relay_mode, external_trigger_mode, inching_control_set, action |
+| Exposes | switch (state), power_on_behavior, network_indicator, turbo_mode, delayed_power_on_state, delayed_power_on_time, detach_relay_mode, external_trigger_mode, inching_control_set, action, action_group |
 | Picture | ![SONOFF MINI-ZBD](https://www.zigbee2mqtt.io/images/devices/MINI-ZBD.png) |
 
 
@@ -114,4 +114,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `toggle`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

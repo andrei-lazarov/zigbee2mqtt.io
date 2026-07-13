@@ -1,7 +1,7 @@
 ---
 title: "Nova Digital SA-WK control via MQTT"
 description: "Integrate your Nova Digital SA-WK via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.414Z
 pageClass: device-page
 ---
 

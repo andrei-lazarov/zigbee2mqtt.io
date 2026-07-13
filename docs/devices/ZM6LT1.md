@@ -1,7 +1,7 @@
 ---
 title: "Moes ZM6LT1 control via MQTT"
 description: "Integrate your Moes ZM6LT1 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.120Z
 pageClass: device-page
 ---
 

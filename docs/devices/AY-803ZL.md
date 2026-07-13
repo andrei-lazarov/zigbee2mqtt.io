@@ -1,7 +1,7 @@
 ---
 title: "AOYAN AY-803ZL control via MQTT"
 description: "Integrate your AOYAN AY-803ZL via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.449Z
 pageClass: device-page
 ---
 

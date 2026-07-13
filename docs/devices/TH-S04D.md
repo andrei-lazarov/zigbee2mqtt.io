@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TH-S04D  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Climate Sensor W100 |
-| Exposes | thermostat_mode, climate (system_mode, fan_mode, occupied_heating_setpoint, local_temperature), PMTSD_from_W100_Data, battery, temperature, humidity, sensor, external_temperature, external_humidity, auto_hide_middle_line, high_temperature, low_temperature, high_humidity, low_humidity, sampling, period, temp_report_mode, temp_period, temp_threshold, humi_report_mode, humi_period, humi_threshold, identify, action |
+| Exposes | thermostat_mode, climate (system_mode, fan_mode, occupied_heating_setpoint, local_temperature), PMTSD_from_W100_Data, battery, temperature, humidity, sensor, external_temperature, external_humidity, auto_hide_middle_line, high_temperature, low_temperature, high_humidity, low_humidity, sampling, period, temp_report_mode, temp_period, temp_threshold, humi_report_mode, humi_period, humi_threshold, identify, action, action_group |
 | Picture | ![Aqara TH-S04D](https://www.zigbee2mqtt.io/images/devices/TH-S04D.png) |
 
 
@@ -233,4 +233,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `W100_PMTSD_request`, `hold_plus`, `hold_center`, `hold_minus`, `single_plus`, `single_center`, `single_minus`, `double_plus`, `double_center`, `double_minus`, `release_plus`, `release_center`, `release_minus`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | WS-K07E  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Light switch H2 EU (single rocker) |
-| Exposes | power, current, energy, led_indicator, flip_indicator_light, switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, multi_click, action |
+| Exposes | power, current, energy, led_indicator, flip_indicator_light, switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, multi_click, action, action_group |
 | Picture | ![Aqara WS-K07E](https://www.zigbee2mqtt.io/images/devices/WS-K07E.png) |
 
 
@@ -145,4 +145,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `hold_up`, `hold_down`, `single_up`, `single_down`, `double_up`, `double_down`, `release_up`, `release_down`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

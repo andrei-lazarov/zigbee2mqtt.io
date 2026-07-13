@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SBRC-005B-B  |
 | Vendor  | [Shelly](/supported-devices/#v=Shelly)  |
 | Description | BLU Remote Control ZB |
-| Exposes | action_group, action_step_size, action_transition_time, battery, identify, action |
+| Exposes | battery, identify, action, action_group, action_step_size, action_transition_time |
 | Picture | ![Shelly SBRC-005B-B](https://www.zigbee2mqtt.io/images/devices/SBRC-005B-B.png) |
 
 
@@ -47,21 +47,6 @@ simulated_brightness:
 
 ## Exposes
 
-### Action group (numeric)
-Group ID associated with the action command..
-Value can be found in the published state on the `action_group` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-
-### Action step size (numeric)
-Step size value used for brightness step actions..
-Value can be found in the published state on the `action_step_size` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-
-### Action transition time (numeric)
-Transition time in seconds for the action..
-Value can be found in the published state on the `action_transition_time` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-
 ### Battery (numeric)
 Remaining battery in %.
 Value can be found in the published state on the `battery` property.
@@ -82,4 +67,23 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `brightness_step_up`, `brightness_step_down`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
 

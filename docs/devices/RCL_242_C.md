@@ -1,7 +1,7 @@
 ---
 title: "Innr RCL 242 C control via MQTT"
 description: "Integrate your Innr RCL 242 C via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.043Z
 pageClass: device-page
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "SONOFF S61SZBTPB control via MQTT"
 description: "Integrate your SONOFF S61SZBTPB via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.362Z
 pageClass: device-page
 ---
 

@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | ZB-ERSM-01  |
 | Vendor  | [Chacon](/supported-devices/#v=Chacon)  |
 | Description | Roller shutter module |
-| Exposes | cover (state, position), cover_mode, action |
+| Exposes | cover (state, position), cover_mode, action, action_group |
 | Picture | ![Chacon ZB-ERSM-01](https://www.zigbee2mqtt.io/images/devices/ZB-ERSM-01.png) |
 
 
@@ -79,4 +79,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `open`, `close`, `stop`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

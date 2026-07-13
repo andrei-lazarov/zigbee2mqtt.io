@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | Smoke Sensor TLSR8258  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | Smoke Sensor on Rubezh IP 212-50M2 base |
-| Exposes | smoke, tamper, battery_low, battery, voltage, switch_type, switch_actions, action |
+| Exposes | smoke, tamper, battery_low, battery, voltage, switch_type, switch_actions, action, action_group |
 | Picture | ![Slacky-DIY Smoke Sensor TLSR8258](https://www.zigbee2mqtt.io/images/devices/Smoke-Sensor-TLSR8258.png) |
 
 
@@ -87,4 +87,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `toggle`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

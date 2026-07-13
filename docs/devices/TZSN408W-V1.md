@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TZSN408W-V1  |
 | Vendor  | [Feibit](/supported-devices/#v=Feibit)  |
 | Description | Four-Gang Scene Switch |
-| Exposes | action |
+| Exposes | action, action_group |
 | Picture | ![Feibit TZSN408W-V1](https://www.zigbee2mqtt.io/images/devices/TZSN408W-V1.png) |
 
 
@@ -38,4 +38,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_1`, `on_2`, `on_3`, `on_4`, `off_1`, `off_2`, `off_3`, `off_4`, `toggle_1`, `toggle_2`, `toggle_3`, `toggle_4`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

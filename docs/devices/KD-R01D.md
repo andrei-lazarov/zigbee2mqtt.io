@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | KD-R01D  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Dimmer switch H2 EU |
-| Exposes | device_temperature, power, energy, voltage, current, led_indicator, flip_indicator_light, power_on_behavior, light (state, brightness), effect, action_rotation_angle, action_rotation_angle_speed, action_rotation_percent, action_rotation_percent_speed, action_rotation_time, action_rotation_button_state, operation_mode, multi_click, sensitivity, phase, min_brightness, max_brightness, action |
+| Exposes | device_temperature, power, energy, voltage, current, led_indicator, flip_indicator_light, power_on_behavior, light (state, brightness), effect, action_rotation_angle, action_rotation_angle_speed, action_rotation_percent, action_rotation_percent_speed, action_rotation_time, action_rotation_button_state, operation_mode, multi_click, sensitivity, phase, min_brightness, max_brightness, action, action_group |
 | Picture | ![Aqara KD-R01D](https://www.zigbee2mqtt.io/images/devices/KD-R01D.png) |
 
 
@@ -245,4 +245,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `start_rotating`, `rotation`, `stop_rotating`, `hold`, `single`, `double`, `release`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

@@ -1,7 +1,7 @@
 ---
 title: "EyZEE _TZE284_0kihjsys control via MQTT"
 description: "Integrate your EyZEE _TZE284_0kihjsys via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.497Z
 pageClass: device-page
 ---
 

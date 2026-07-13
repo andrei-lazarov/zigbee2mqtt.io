@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TSM1-SlD  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | Tuya switch module 1 gang with custom firmware |
-| Exposes | switch (state), power_on_behavior, switch_actions, switch_type, operation_mode, action |
+| Exposes | switch (state), power_on_behavior, switch_actions, switch_type, operation_mode, action, action_group |
 | Picture | ![Slacky-DIY TSM1-SlD](https://www.zigbee2mqtt.io/images/devices/TSM1-SlD.png) |
 
 
@@ -84,4 +84,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `toggle`, `hold`, `single`, `double`, `triple`, `quadruple`, `quintuple`, `release`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

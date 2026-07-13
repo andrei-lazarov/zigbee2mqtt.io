@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SR-ZG9101SAC-HP-SWITCH-2CH  |
 | Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description | Zigbee 2 channels switch |
-| Exposes | switch (state), power_on_behavior, power, voltage, current, energy, identify, external_switch_type, action |
+| Exposes | switch (state), power_on_behavior, power, voltage, current, energy, identify, external_switch_type, action, action_group |
 | Picture | ![Sunricher SR-ZG9101SAC-HP-SWITCH-2CH](https://www.zigbee2mqtt.io/images/devices/SR-ZG9101SAC-HP-SWITCH-2CH.png) |
 | White-label | LED-Trading UP-SA-9127D |
 
@@ -139,4 +139,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_l1`, `on_l2`, `off_l1`, `off_l2`, `toggle_l1`, `toggle_l2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

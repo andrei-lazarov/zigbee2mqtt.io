@@ -1,7 +1,7 @@
 ---
 title: "Heiman Heiman-M1 control via MQTT"
 description: "Integrate your Heiman Heiman-M1 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 2026-07-13T19:37:31.283Z
+addedAt: 2026-07-13T19:37:31
 pageClass: device-page
 ---
 

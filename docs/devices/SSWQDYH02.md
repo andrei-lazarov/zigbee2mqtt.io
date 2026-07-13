@@ -1,7 +1,7 @@
 ---
 title: "Aqara SSWQDYH02 control via MQTT"
 description: "Integrate your Aqara SSWQDYH02 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:52.302Z
 pageClass: device-page
 ---
 

@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TS0001_power-SlD  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | Switch with power monitoring |
-| Exposes | switch (state), power_on_behavior, switch_actions, switch_type, operation_mode, power, voltage, ac_frequency, current, energy, energy_reset, protect_control, automatic_restart, voltage_min, voltage_max, current_max, power_max, time_reload, action |
+| Exposes | switch (state), power_on_behavior, switch_actions, switch_type, operation_mode, power, voltage, ac_frequency, current, energy, energy_reset, protect_control, automatic_restart, voltage_min, voltage_max, current_max, power_max, time_reload, action, action_group |
 | Picture | ![Slacky-DIY TS0001_power-SlD](https://www.zigbee2mqtt.io/images/devices/TS0001_power-SlD.png) |
 
 
@@ -200,4 +200,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `toggle`, `hold`, `single`, `double`, `triple`, `quadruple`, `quintuple`, `release`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

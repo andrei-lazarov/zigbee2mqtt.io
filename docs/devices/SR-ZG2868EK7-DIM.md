@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SR-ZG2868EK7-DIM  |
 | Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description |  ZigBee handheld diming remote, 4 scenes |
-| Exposes | battery, action |
+| Exposes | battery, action, action_group, action_step_size, action_transition_time, action_rate |
 | Picture | ![Sunricher SR-ZG2868EK7-DIM](https://www.zigbee2mqtt.io/images/devices/SR-ZG2868EK7-DIM.png) |
 
 
@@ -56,4 +56,29 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `brightness_step_up`, `brightness_step_down`, `brightness_move_up`, `brightness_move_down`, `brightness_stop`, `recall`, `store`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
+
+### Action rate (numeric)
+Rate parameter of brightness/color Move commands.
+Value can be found in the published state on the `action_rate` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
 

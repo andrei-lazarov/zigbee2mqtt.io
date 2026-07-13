@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | ERS-10TZBVK-AA  |
 | Vendor  | [Tuya](/supported-devices/#v=Tuya)  |
 | Description | Smart knob |
-| Exposes | action_brightness_delta, action_step_size, action_color_temperature_delta, action_transition_time, action_rate, battery, operation_mode, action |
+| Exposes | action_brightness_delta, action_color_temperature_delta, battery, operation_mode, action, action_step_size, action_transition_time, action_rate |
 | Picture | ![Tuya ERS-10TZBVK-AA](https://www.zigbee2mqtt.io/images/devices/ERS-10TZBVK-AA.png) |
 
 
@@ -85,25 +85,10 @@ Value can be found in the published state on the `action_brightness_delta` prope
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `-255` and the maximum value is `255`.
 
-### Action step size (numeric)
-Value can be found in the published state on the `action_step_size` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-The minimal value is `0` and the maximum value is `255`.
-
 ### Action color temperature delta (numeric)
 Value can be found in the published state on the `action_color_temperature_delta` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `-65535` and the maximum value is `65535`.
-
-### Action transition time (numeric)
-Value can be found in the published state on the `action_transition_time` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-The unit of this value is `s`.
-
-### Action rate (numeric)
-Value can be found in the published state on the `action_rate` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-The minimal value is `0` and the maximum value is `255`.
 
 ### Battery (numeric)
 Remaining battery in %, can take up to 24 hours before reported.
@@ -124,4 +109,23 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `toggle`, `brightness_step_up`, `brightness_step_down`, `color_temperature_step_up`, `color_temperature_step_down`, `saturation_move`, `hue_move`, `hue_stop`, `single`, `double`, `hold`, `rotate_left`, `rotate_right`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
+
+### Action rate (numeric)
+Rate parameter of brightness/color Move commands.
+Value can be found in the published state on the `action_rate` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
 

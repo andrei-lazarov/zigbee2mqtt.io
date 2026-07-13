@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | MINI-ZB2GS  |
 | Vendor  | [SONOFF](/supported-devices/#v=SONOFF)  |
 | Description | Zigbee dual-channel smart switch |
-| Exposes | switch (state), power_on_behavior, external_trigger_mode, detach_relay_mode, inching_control_set, network_indicator, turbo_mode, delayed_power_on_state_channel_1, delayed_power_on_state_channel_2, delayed_power_on_time, programmable_stepper_seq1, programmable_stepper_seq2, programmable_stepper_seq3, programmable_stepper_seq4, action |
+| Exposes | switch (state), power_on_behavior, external_trigger_mode, detach_relay_mode, inching_control_set, network_indicator, turbo_mode, delayed_power_on_state_channel_1, delayed_power_on_state_channel_2, delayed_power_on_time, programmable_stepper_seq1, programmable_stepper_seq2, programmable_stepper_seq3, programmable_stepper_seq4, action, action_group |
 | Picture | ![SONOFF MINI-ZB2GS](https://www.zigbee2mqtt.io/images/devices/MINI-ZB2GS.png) |
 
 
@@ -220,4 +220,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `toggle_l1`, `toggle_l2`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

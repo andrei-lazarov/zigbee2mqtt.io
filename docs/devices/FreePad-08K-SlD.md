@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | FreePad-08K-SlD  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | DIY 8 buttons keypad |
-| Exposes | battery, switch_actions, switch_type, scene_id, group_id, min_level, max_level, action |
+| Exposes | battery, switch_actions, switch_type, scene_id, group_id, min_level, max_level, action, action_group, action_level, action_step_size, action_transition_time, action_rate |
 | Picture | ![Slacky-DIY FreePad-08K-SlD](https://www.zigbee2mqtt.io/images/devices/FreePad-08K-SlD.png) |
 
 
@@ -394,4 +394,35 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_1`, `on_2`, `on_3`, `on_4`, `on_5`, `on_6`, `on_7`, `on_8`, `off_1`, `off_2`, `off_3`, `off_4`, `off_5`, `off_6`, `off_7`, `off_8`, `toggle_1`, `toggle_2`, `toggle_3`, `toggle_4`, `toggle_5`, `toggle_6`, `toggle_7`, `toggle_8`, `hold_1`, `hold_2`, `hold_3`, `hold_4`, `hold_5`, `hold_6`, `hold_7`, `hold_8`, `single_1`, `single_2`, `single_3`, `single_4`, `single_5`, `single_6`, `single_7`, `single_8`, `double_1`, `double_2`, `double_3`, `double_4`, `double_5`, `double_6`, `double_7`, `double_8`, `triple_1`, `triple_2`, `triple_3`, `triple_4`, `triple_5`, `triple_6`, `triple_7`, `triple_8`, `quadruple_1`, `quadruple_2`, `quadruple_3`, `quadruple_4`, `quadruple_5`, `quadruple_6`, `quadruple_7`, `quadruple_8`, `quintuple_1`, `quintuple_2`, `quintuple_3`, `quintuple_4`, `quintuple_5`, `quintuple_6`, `quintuple_7`, `quintuple_8`, `release_1`, `release_2`, `release_3`, `release_4`, `release_5`, `release_6`, `release_7`, `release_8`, `brightness_move_to_level_1`, `brightness_move_to_level_2`, `brightness_move_to_level_3`, `brightness_move_to_level_4`, `brightness_move_to_level_5`, `brightness_move_to_level_6`, `brightness_move_to_level_7`, `brightness_move_to_level_8`, `brightness_move_up_1`, `brightness_move_up_2`, `brightness_move_up_3`, `brightness_move_up_4`, `brightness_move_up_5`, `brightness_move_up_6`, `brightness_move_up_7`, `brightness_move_up_8`, `brightness_move_down_1`, `brightness_move_down_2`, `brightness_move_down_3`, `brightness_move_down_4`, `brightness_move_down_5`, `brightness_move_down_6`, `brightness_move_down_7`, `brightness_move_down_8`, `brightness_step_up_1`, `brightness_step_up_2`, `brightness_step_up_3`, `brightness_step_up_4`, `brightness_step_up_5`, `brightness_step_up_6`, `brightness_step_up_7`, `brightness_step_up_8`, `brightness_step_down_1`, `brightness_step_down_2`, `brightness_step_down_3`, `brightness_step_down_4`, `brightness_step_down_5`, `brightness_step_down_6`, `brightness_step_down_7`, `brightness_step_down_8`, `brightness_stop_1`, `brightness_stop_2`, `brightness_stop_3`, `brightness_stop_4`, `brightness_stop_5`, `brightness_stop_6`, `brightness_stop_7`, `brightness_stop_8`, `color_temperature_move_stop_1`, `color_temperature_move_stop_2`, `color_temperature_move_stop_3`, `color_temperature_move_stop_4`, `color_temperature_move_stop_5`, `color_temperature_move_stop_6`, `color_temperature_move_stop_7`, `color_temperature_move_stop_8`, `color_temperature_move_up_1`, `color_temperature_move_up_2`, `color_temperature_move_up_3`, `color_temperature_move_up_4`, `color_temperature_move_up_5`, `color_temperature_move_up_6`, `color_temperature_move_up_7`, `color_temperature_move_up_8`, `color_temperature_move_down_1`, `color_temperature_move_down_2`, `color_temperature_move_down_3`, `color_temperature_move_down_4`, `color_temperature_move_down_5`, `color_temperature_move_down_6`, `color_temperature_move_down_7`, `color_temperature_move_down_8`, `color_temperature_step_up_1`, `color_temperature_step_up_2`, `color_temperature_step_up_3`, `color_temperature_step_up_4`, `color_temperature_step_up_5`, `color_temperature_step_up_6`, `color_temperature_step_up_7`, `color_temperature_step_up_8`, `color_temperature_step_down_1`, `color_temperature_step_down_2`, `color_temperature_step_down_3`, `color_temperature_step_down_4`, `color_temperature_step_down_5`, `color_temperature_step_down_6`, `color_temperature_step_down_7`, `color_temperature_step_down_8`, `enhanced_move_to_hue_and_saturation_1`, `enhanced_move_to_hue_and_saturation_2`, `enhanced_move_to_hue_and_saturation_3`, `enhanced_move_to_hue_and_saturation_4`, `enhanced_move_to_hue_and_saturation_5`, `enhanced_move_to_hue_and_saturation_6`, `enhanced_move_to_hue_and_saturation_7`, `enhanced_move_to_hue_and_saturation_8`, `move_to_hue_and_saturation_1`, `move_to_hue_and_saturation_2`, `move_to_hue_and_saturation_3`, `move_to_hue_and_saturation_4`, `move_to_hue_and_saturation_5`, `move_to_hue_and_saturation_6`, `move_to_hue_and_saturation_7`, `move_to_hue_and_saturation_8`, `color_hue_step_up_1`, `color_hue_step_up_2`, `color_hue_step_up_3`, `color_hue_step_up_4`, `color_hue_step_up_5`, `color_hue_step_up_6`, `color_hue_step_up_7`, `color_hue_step_up_8`, `color_hue_step_down_1`, `color_hue_step_down_2`, `color_hue_step_down_3`, `color_hue_step_down_4`, `color_hue_step_down_5`, `color_hue_step_down_6`, `color_hue_step_down_7`, `color_hue_step_down_8`, `color_saturation_step_up_1`, `color_saturation_step_up_2`, `color_saturation_step_up_3`, `color_saturation_step_up_4`, `color_saturation_step_up_5`, `color_saturation_step_up_6`, `color_saturation_step_up_7`, `color_saturation_step_up_8`, `color_saturation_step_down_1`, `color_saturation_step_down_2`, `color_saturation_step_down_3`, `color_saturation_step_down_4`, `color_saturation_step_down_5`, `color_saturation_step_down_6`, `color_saturation_step_down_7`, `color_saturation_step_down_8`, `color_loop_set_1`, `color_loop_set_2`, `color_loop_set_3`, `color_loop_set_4`, `color_loop_set_5`, `color_loop_set_6`, `color_loop_set_7`, `color_loop_set_8`, `color_temperature_move_1`, `color_temperature_move_2`, `color_temperature_move_3`, `color_temperature_move_4`, `color_temperature_move_5`, `color_temperature_move_6`, `color_temperature_move_7`, `color_temperature_move_8`, `color_move_1`, `color_move_2`, `color_move_3`, `color_move_4`, `color_move_5`, `color_move_6`, `color_move_7`, `color_move_8`, `hue_move_1`, `hue_move_2`, `hue_move_3`, `hue_move_4`, `hue_move_5`, `hue_move_6`, `hue_move_7`, `hue_move_8`, `hue_stop_1`, `hue_stop_2`, `hue_stop_3`, `hue_stop_4`, `hue_stop_5`, `hue_stop_6`, `hue_stop_7`, `hue_stop_8`, `move_to_saturation_1`, `move_to_saturation_2`, `move_to_saturation_3`, `move_to_saturation_4`, `move_to_saturation_5`, `move_to_saturation_6`, `move_to_saturation_7`, `move_to_saturation_8`, `move_to_hue_1`, `move_to_hue_2`, `move_to_hue_3`, `move_to_hue_4`, `move_to_hue_5`, `move_to_hue_6`, `move_to_hue_7`, `move_to_hue_8`, `stop_move_step_1`, `stop_move_step_2`, `stop_move_step_3`, `stop_move_step_4`, `stop_move_step_5`, `stop_move_step_6`, `stop_move_step_7`, `stop_move_step_8`, `recall_1`, `recall_2`, `recall_3`, `recall_4`, `recall_5`, `recall_6`, `recall_7`, `recall_8`, `store_1`, `store_2`, `store_3`, `store_4`, `store_5`, `store_6`, `store_7`, `store_8`, `add_1`, `add_2`, `add_3`, `add_4`, `add_5`, `add_6`, `add_7`, `add_8`, `remove_1`, `remove_2`, `remove_3`, `remove_4`, `remove_5`, `remove_6`, `remove_7`, `remove_8`, `remove_all_1`, `remove_all_2`, `remove_all_3`, `remove_all_4`, `remove_all_5`, `remove_all_6`, `remove_all_7`, `remove_all_8`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
+
+### Action level (numeric)
+Target brightness of Move to level command.
+Value can be found in the published state on the `action_level` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
+
+### Action rate (numeric)
+Rate parameter of brightness/color Move commands.
+Value can be found in the published state on the `action_rate` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
 

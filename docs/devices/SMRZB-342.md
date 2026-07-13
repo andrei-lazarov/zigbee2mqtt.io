@@ -1,7 +1,7 @@
 ---
 title: "Frient SMRZB-342 control via MQTT"
 description: "Integrate your Frient SMRZB-342 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
-addedAt: 
+addedAt: 2026-07-13T19:38:51.968Z
 pageClass: device-page
 ---
 

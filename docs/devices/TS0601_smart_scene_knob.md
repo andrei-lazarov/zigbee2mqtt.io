@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TS0601_smart_scene_knob  |
 | Vendor  | [Tuya](/supported-devices/#v=Tuya)  |
 | Description | Smart scene knob controller with 4 buttons |
-| Exposes | brightness, color_temp, curtain_position, assignment_status, base_group_id, action_button, action_group, bind_all_scene, bind_all_light, bind_all_curtain, assign_button_1, set_base_group_id, action |
+| Exposes | brightness, color_temp, curtain_position, assignment_status, base_group_id, action_button, bind_all_scene, bind_all_light, bind_all_curtain, assign_button_1, set_base_group_id, action, action_group |
 | Picture | ![Tuya TS0601_smart_scene_knob](https://www.zigbee2mqtt.io/images/devices/TS0601_smart_scene_knob.png) |
 
 
@@ -119,11 +119,6 @@ Value can be found in the published state on the `action_button` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `1` and the maximum value is `4`.
 
-### Action group (numeric)
-Group ID from last action.
-Value can be found in the published state on the `action_group` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-
 ### Bind all scene (enum)
 Bind all buttons to Scene mode (red LED).
 Value will **not** be published in the state.
@@ -164,4 +159,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `scene_1`, `scene_2`, `scene_3`, `scene_4`, `light_1_on`, `light_1_off`, `light_1_brightness_up`, `light_1_brightness_down`, `light_1_colortemp_up`, `light_1_colortemp_down`, `light_2_on`, `light_2_off`, `light_2_brightness_up`, `light_2_brightness_down`, `light_2_colortemp_up`, `light_2_colortemp_down`, `light_3_on`, `light_3_off`, `light_3_brightness_up`, `light_3_brightness_down`, `light_3_colortemp_up`, `light_3_colortemp_down`, `light_4_on`, `light_4_off`, `light_4_brightness_up`, `light_4_brightness_down`, `light_4_colortemp_up`, `light_4_colortemp_down`, `curtain_1_start`, `curtain_1_stop`, `curtain_1_position_open`, `curtain_1_position_close`, `curtain_2_start`, `curtain_2_stop`, `curtain_2_position_open`, `curtain_2_position_close`, `curtain_3_start`, `curtain_3_stop`, `curtain_3_position_open`, `curtain_3_position_close`, `curtain_4_start`, `curtain_4_stop`, `curtain_4_position_open`, `curtain_4_position_close`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

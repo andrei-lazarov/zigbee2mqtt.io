@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | ZNQBKG41LM  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Smart wall switch Z1 (quadruple rocker) |
-| Exposes | switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, energy, voltage, current, power, led_disabled_night, click_mode, action |
+| Exposes | switch (state), device_temperature, power_outage_count, power_on_behavior, operation_mode, lock_relay, energy, voltage, current, power, led_disabled_night, click_mode, action, action_group |
 | Picture | ![Aqara ZNQBKG41LM](https://www.zigbee2mqtt.io/images/devices/ZNQBKG41LM.png) |
 
 
@@ -195,4 +195,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `hold_top`, `hold_center`, `hold_bottom`, `hold_wireless`, `single_top`, `single_center`, `single_bottom`, `single_wireless`, `double_top`, `double_center`, `double_bottom`, `double_wireless`, `release_top`, `release_center`, `release_bottom`, `release_wireless`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

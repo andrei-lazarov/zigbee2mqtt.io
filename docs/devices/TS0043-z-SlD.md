@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | TS0043-z-SlD  |
 | Vendor  | [Slacky-DIY](/supported-devices/#v=Slacky-DIY)  |
 | Description | Tuya wireless switch with 3 buttons with custom firmware |
-| Exposes | battery, switch_actions, switch_type, scene_id, group_id, min_level, max_level, action |
+| Exposes | battery, switch_actions, switch_type, scene_id, group_id, min_level, max_level, action, action_group, action_level, action_step_size, action_transition_time, action_rate |
 | Picture | ![Slacky-DIY TS0043-z-SlD](https://www.zigbee2mqtt.io/images/devices/TS0043-z-SlD.png) |
 
 
@@ -184,4 +184,35 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on_1`, `on_2`, `on_3`, `off_1`, `off_2`, `off_3`, `toggle_1`, `toggle_2`, `toggle_3`, `hold_1`, `hold_2`, `hold_3`, `single_1`, `single_2`, `single_3`, `double_1`, `double_2`, `double_3`, `triple_1`, `triple_2`, `triple_3`, `quadruple_1`, `quadruple_2`, `quadruple_3`, `quintuple_1`, `quintuple_2`, `quintuple_3`, `release_1`, `release_2`, `release_3`, `brightness_move_to_level_1`, `brightness_move_to_level_2`, `brightness_move_to_level_3`, `brightness_move_up_1`, `brightness_move_up_2`, `brightness_move_up_3`, `brightness_move_down_1`, `brightness_move_down_2`, `brightness_move_down_3`, `brightness_step_up_1`, `brightness_step_up_2`, `brightness_step_up_3`, `brightness_step_down_1`, `brightness_step_down_2`, `brightness_step_down_3`, `brightness_stop_1`, `brightness_stop_2`, `brightness_stop_3`, `color_temperature_move_stop_1`, `color_temperature_move_stop_2`, `color_temperature_move_stop_3`, `color_temperature_move_up_1`, `color_temperature_move_up_2`, `color_temperature_move_up_3`, `color_temperature_move_down_1`, `color_temperature_move_down_2`, `color_temperature_move_down_3`, `color_temperature_step_up_1`, `color_temperature_step_up_2`, `color_temperature_step_up_3`, `color_temperature_step_down_1`, `color_temperature_step_down_2`, `color_temperature_step_down_3`, `enhanced_move_to_hue_and_saturation_1`, `enhanced_move_to_hue_and_saturation_2`, `enhanced_move_to_hue_and_saturation_3`, `move_to_hue_and_saturation_1`, `move_to_hue_and_saturation_2`, `move_to_hue_and_saturation_3`, `color_hue_step_up_1`, `color_hue_step_up_2`, `color_hue_step_up_3`, `color_hue_step_down_1`, `color_hue_step_down_2`, `color_hue_step_down_3`, `color_saturation_step_up_1`, `color_saturation_step_up_2`, `color_saturation_step_up_3`, `color_saturation_step_down_1`, `color_saturation_step_down_2`, `color_saturation_step_down_3`, `color_loop_set_1`, `color_loop_set_2`, `color_loop_set_3`, `color_temperature_move_1`, `color_temperature_move_2`, `color_temperature_move_3`, `color_move_1`, `color_move_2`, `color_move_3`, `hue_move_1`, `hue_move_2`, `hue_move_3`, `hue_stop_1`, `hue_stop_2`, `hue_stop_3`, `move_to_saturation_1`, `move_to_saturation_2`, `move_to_saturation_3`, `move_to_hue_1`, `move_to_hue_2`, `move_to_hue_3`, `stop_move_step_1`, `stop_move_step_2`, `stop_move_step_3`, `recall_1`, `recall_2`, `recall_3`, `store_1`, `store_2`, `store_3`, `add_1`, `add_2`, `add_3`, `remove_1`, `remove_2`, `remove_3`, `remove_all_1`, `remove_all_2`, `remove_all_3`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
+
+### Action level (numeric)
+Target brightness of Move to level command.
+Value can be found in the published state on the `action_level` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action step size (numeric)
+Step size parameter of brightness/color Step commands.
+Value can be found in the published state on the `action_step_size` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
+
+### Action transition time (numeric)
+Transition parameter of level control commands.
+Value can be found in the published state on the `action_transition_time` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `6553.5`.
+The unit of this value is `s`.
+
+### Action rate (numeric)
+Rate parameter of brightness/color Move commands.
+Value can be found in the published state on the `action_rate` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `255`.
 

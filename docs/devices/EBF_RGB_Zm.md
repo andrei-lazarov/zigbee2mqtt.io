@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | EBF_RGB_Zm  |
 | Vendor  | [AwoX](/supported-devices/#v=AwoX)  |
 | Description | LED with adjustable color temp on main ring; extra RGB strip for full colors. |
-| Exposes | light (state, brightness, color_temp, color_temp_startup, color_xy, color_hs), effect, power_on_behavior, action |
+| Exposes | light (state, brightness, color_temp, color_temp_startup, color_xy, color_hs), effect, power_on_behavior, action, action_group |
 | Picture | ![AwoX EBF_RGB_Zm](https://www.zigbee2mqtt.io/images/devices/EBF_RGB_Zm.png) |
 | White-label | EGLO 900566, EGLO 901463 |
 
@@ -128,4 +128,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `on`, `off`, `toggle`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

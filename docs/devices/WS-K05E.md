@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | WS-K05E  |
 | Vendor  | [Aqara](/supported-devices/#v=Aqara)  |
 | Description | Dimmer Switch H2 US |
-| Exposes | light (state, brightness, level_config), power_outage_count, device_temperature, power, energy, voltage, current, led_indicator, flip_indicator_light, mode_switch, operation_mode, power_on_behavior, multi_click, phase, min_brightness, max_brightness, action |
+| Exposes | light (state, brightness, level_config), power_outage_count, device_temperature, power, energy, voltage, current, led_indicator, flip_indicator_light, mode_switch, operation_mode, power_on_behavior, multi_click, phase, min_brightness, max_brightness, action, action_group |
 | Picture | ![Aqara WS-K05E](https://www.zigbee2mqtt.io/images/devices/WS-K05E.png) |
 
 
@@ -232,4 +232,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `hold_power`, `hold_bright`, `hold_dim`, `single_power`, `single_bright`, `single_dim`, `double_power`, `double_bright`, `double_dim`, `release_power`, `release_bright`, `release_dim`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

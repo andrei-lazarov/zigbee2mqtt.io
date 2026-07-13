@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | QAT42Z3  |
 | Vendor  | [QA](/supported-devices/#v=QA)  |
 | Description | 3 channel scene switch |
-| Exposes | switch (state), power_on_behavior, backlight_mode, action |
+| Exposes | switch (state), power_on_behavior, backlight_mode, action, action_group |
 | Picture | ![QA QAT42Z3](https://www.zigbee2mqtt.io/images/devices/QAT42Z3.png) |
 
 
@@ -104,4 +104,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `button`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

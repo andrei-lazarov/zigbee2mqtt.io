@@ -18,7 +18,7 @@ pageClass: device-page
 | Model | SR-ZG2835RAC-NK4  |
 | Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description | 4-Key zigbee rotary & push button smart dimmer |
-| Exposes | light (state, brightness), effect, power_on_behavior, power, voltage, current, energy, action |
+| Exposes | light (state, brightness), effect, power_on_behavior, power, voltage, current, energy, action, action_group |
 | Picture | ![Sunricher SR-ZG2835RAC-NK4](https://www.zigbee2mqtt.io/images/devices/SR-ZG2835RAC-NK4.png) |
 
 
@@ -137,4 +137,10 @@ Triggered action (e.g. a button click).
 Value can be found in the published state on the `action` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The possible values are: `recall`, `store`, `add`, `remove`, `remove_all`.
+
+### Action group (numeric)
+Target group of the action.
+Value can be found in the published state on the `action_group` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The minimal value is `0` and the maximum value is `65535`.
 

@@ -27,11 +27,13 @@ pageClass: device-page
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
 ## Notes
 
+### Information
+[Manufacturer product page and manual](https://www.saswell.com/smart-thermostatic-radiator-valves/sea802.html)
 
 ### Pairing
 
 * SEA801-Zigbee (LCD display on the front, several buttons): Long hold the "AUTO/MANU" and "+" Button until the LCD display shows "----"
-* SEA802-Z01 (white LED display on the side, rotary plate): Turn the rotary plate to decrease the temperature until the LED dots show "OF", then long press until the display changes to "--"
+* SEA802-Z01 (white LED display on the side, rotary plate): Turn the rotary plate to decrease the temperature until the LED segments show "OF", then long press until the display changes to "--"
 
 ### Weekly Schedule
 
